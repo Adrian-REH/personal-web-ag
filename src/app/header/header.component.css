@@ -1,0 +1,63 @@
+/* BOTONES DE MENU */
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+    padding-right: 2%;
+  }
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .mst {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    .flex {
+      transform: scale(1.5); /* Ajusta el tamaño */
+    }
+  }
+  .menu li {
+    margin-left: 35px;
+  }
+  
+  .menu a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+    font-size: 2.5em; /* Ajusta el tamaño del texto según tus necesidades */
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+@media (max-width: 1024px) {
+.menu {
+    display: flex;
+    justify-content: end; /* Alinea a la izquierda */
+    flex-direction: row-reverse;
+    padding-left: 10px; /* Ajusta el padding según sea necesario */
+    align-items: center;
+}
+.menu a {
+    font-size: 1em; /* Ajusta el tamaño del texto según tus necesidades */
+
+}
+.menu ul {
+    visibility:collapse; /* Hace que el ul sea invisible */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    list-style: none; /* Elimina los puntos de lista */
+}
+.mst {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  .flex {
+    transform: scale(0.9); /* Ajusta el tamaño */
+  }
+}
+}

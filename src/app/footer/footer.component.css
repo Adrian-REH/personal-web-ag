@@ -1,0 +1,146 @@
+
+/* INFORMACION DE PRIVACIDAD*/
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-info {
+  align-self: end;
+  flex: 1; /* Ajusta esta sección para que ocupe el espacio necesario */
+}
+.footer-hash {
+  flex: 1; /* Ajusta esta sección para que ocupe el espacio necesario */
+}
+.privacity {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 3%;
+  padding-left: 5%;
+}
+.privacity ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.privacity li {
+  margin-left: 20px;
+}
+
+.privacity a {
+  color: var(--menu-text-color);
+  text-decoration: none;
+  font-size: 1em; /* Ajusta el tamaño del texto según tus necesidades */
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+}
+.privacity a:hover {
+  text-decoration: underline;
+}
+
+
+/* HASTAGS */
+.hashtag {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 3%;
+  padding-right: 5%;
+}
+.hashtag ul {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan a la siguiente línea */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: right; /* Centra los elementos hijos */
+}
+.hashtag li {
+  margin-left: 20px;
+}
+.hashtag a {
+  color: var(--menu-text-color);
+  text-decoration: none;
+  font-size: 2.3em; /* Ajusta el tamaño del texto según tus necesidades */
+  font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+}
+
+.divider {
+  width: 2px; /* Grosor del divisor */
+  height: 100%; /* Ajusta la altura según sea necesario */
+  background-color: var(--text-color); /* Color del divisor */
+  margin: 0 15px; /* Espaciado alrededor del divisor, ajusta según sea necesario */
+}
+  
+@media (max-width: 1024px) {
+
+    /* BELOW */
+  .footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-content {
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: column-reverse;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer-info {
+    width: 100%;
+    align-self: center;
+  }
+  .footer-hash {
+    width: 100%;
+    align-self: flex-end; /* Esto posiciona .footer-info a la izquierda */
+  }
+
+  .privacity {
+    display: flex;
+    padding: 1%;
+    justify-content: center;
+  }
+  .privacity li {
+    margin-left: 10px;
+  }
+  .privacity a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+    font-size: 0.7em; /* Ajusta el tamaño del texto según tus necesidades */
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  }
+
+
+  .hashtag {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+    padding: 1%;
+  }
+  .hashtag li {
+    margin-left: 10px;
+  }
+  .hashtag a {
+    color: var(--menu-text-color);
+    text-decoration: none;
+    font-size: 1em; /* Ajusta el tamaño del texto según tus necesidades */
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  }
+}

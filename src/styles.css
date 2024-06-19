@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+  
+:root{
+  --background-color: #E4E2D2;
+  --menu-background-color:#E4E2D2;
+  --icon-hover-background-color: #4f4c39;
+  --icon-hover-color: #ffffff;
+  --skeleton-background:linear-gradient(90deg, #868686 25%, #989898 50%, #868686 75%);
+  --text-color: black;
+  --menu-text-color: rgb(0, 0, 0);
+
+}
+:root.light-theme {
+    --background-color: #E4E2D2;
+    --menu-background-color:#E4E2D2;
+    --icon-hover-background-color: #4f4c39;
+    --icon-hover-color: #ffffff;
+    --skeleton-background:linear-gradient(90deg, #868686 25%, #989898 50%, #868686 75%);
+    --text-color: black;
+    --menu-text-color: rgb(0, 0, 0);
+  }
+  
+  /* Tema Oscuro */
+  :root.dark-theme {
+    --background-color: #4f4c39;
+    --menu-background-color:#4f4c39;
+    --icon-hover-background-color: #E4E2D2;
+    --icon-hover-color: #000000;
+    --skeleton-background:linear-gradient(90deg, #cdcbcb 25%, #f0f0f0 50%, #cdcbcb 75%);
+    --text-color: white;
+    --menu-text-color: #e2e2e2;
+  }
+
+
+  @keyframes loading {
+    0% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  .custom-space {
+    height: 30px; /* Ajusta el tamaño vertical del espacio */
+    margin: 0;    /* Elimina el margen por defecto */
+    padding: 0;   /* Elimina el padding por defecto */
+  }
+  .skeleton-text {
+    width: 60%;
+    height: 20px;
+    margin-top: 20px;
+    background: var(--skeleton-background);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+  }
+
+
+html, body
+
+
+body {
+ font-family: Roboto, "Helvetica Neue", sans-serif; 
+  background-color: var(--background-color);
+}
