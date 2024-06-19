@@ -1,25 +1,4 @@
 <!-- Header con botón de cambio de tema y menú -->
-  <app-header></app-header>
-  <!-- Contenido principal -->
-  <main>
-    <div class="container">
-      <div class = 'contact'>
-          <ul>
-              <button><fa-icon class="iconsize" [icon]="faGithub"></fa-icon></button>
-              <button><fa-icon class="iconsize" [icon]="faGithub"></fa-icon></button>
-              <button><fa-icon class="iconsize" [icon]="faGithub"></fa-icon></button>
-              <button><fa-icon class="iconsize" [icon]="faGithub"></fa-icon></button>
-          </ul>
-      </div>
-    </div>
 
-    <div class="presentation">
-      <div class="presentation-image"></div>
-      <p class="custom-space"></p>
-      <h1>{{ name }}</h1>
-      <p class="custom-space"></p>
-      <div class="center-text">{{ infoText }}</div>
-    </div>
-  </main>
-  
-<app-footer [hashtags]="hashtags"></app-footer>
+<router-outlet></router-outlet>
+

@@ -1,5 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
   
+.card { 
+  margin-right: auto; 
+  margin-left: auto; 
+  width: 250px; 
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+  height: 300px; 
+  border-radius: 5px; 
+  backdrop-filter: blur(14px); 
+  background-color: rgba(255, 255, 255, 0.2); 
+  padding: 10px; 
+  text-align: center; 
+} 
+
+.card img { 
+  height: 60%; 
+}
 :root{
   --background-color: #E4E2D2;
   --menu-background-color:#E4E2D2;

@@ -10,23 +10,24 @@
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
   }
   
   .mst {
     display: flex;
     align-items: center; /* Centra verticalmente */
     .flex {
-      transform: scale(1.5); /* Ajusta el tamaño */
+      transform: scale(1); /* Ajusta el tamaño */
     }
   }
   .menu li {
-    margin-left: 35px;
+    margin-left: 40px;
   }
   
   .menu a {
     color: var(--menu-text-color);
     text-decoration: none;
-    font-size: 2.5em; /* Ajusta el tamaño del texto según tus necesidades */
+    font-size: 1.2em; /* Ajusta el tamaño del texto según tus necesidades */
     font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
