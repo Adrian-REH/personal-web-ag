@@ -1,5 +1,7 @@
 /* BOTONES DE MENU */
 .menu {
+  background-color: var(--background-color);
+
     display: flex;
     justify-content: flex-end;
     padding-top: 1%;

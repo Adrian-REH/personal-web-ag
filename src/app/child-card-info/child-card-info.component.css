@@ -1,11 +1,9 @@
 
 .card { 
-    margin-right: auto; 
-    margin-left: auto; 
     padding: 20px;
     margin: 0;
-    width: 60vh;
-    height: 80vh; 
+    width: 50vh;
+    height: 70vh; 
     box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
     border-radius: 20px; 
     backdrop-filter: blur(14px); 

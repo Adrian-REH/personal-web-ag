@@ -1,0 +1,41 @@
+/* Asegúrate de que el body y el html ocupen toda la pantalla */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  overflow: hidden;
+}
+
+/* Estilos para el carrusel como fondo */
+.carousel-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca el carrusel detrás del contenido */
+}
+
+/* Estilos para el header */
+.header {
+  position: relative;
+  z-index: 1; /* Coloca el header sobre el carrusel */
+  width: 100%;
+  /* Agrega más estilos según sea necesario */
+}
+
+/* Estilos para el footer */
+.footer {
+  position: relative;
+  z-index: 1; /* Coloca el footer sobre el carrusel */
+  width: 100%;
+  bottom: 0;
+  /* Agrega más estilos según sea necesario */
+}

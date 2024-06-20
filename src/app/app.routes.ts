@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { FrontendComponent } from './frontend/frontend.component';
 
 export const routes: Routes = [
+
     { 
         path: 'home',
         title: 'home',
