@@ -1,0 +1,43 @@
+
+
+/*BODY*/
+main {
+    border-radius: 80px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    box-sizing: inherit;
+    position: absolute;
+  }
+  
+  .fe-container {
+
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+.fe-card {
+  border-radius: 20px;
+  display: flex; /* Utilizamos flexbox */
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1; /* Sitúa el fondo detrás del contenido */
+}
+.contentFt {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  display: none; /* Ocultamos la imagen original para evitar redundancias */
+}

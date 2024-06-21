@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import { ThemePalette } from '@angular/material/core';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { RouterLink } from '@angular/router';
+import { ThemeService } from '../theme.service';
 
 @Component({
   selector: 'app-header',
@@ -14,17 +15,20 @@ export class HeaderComponent {
   color: ThemePalette = 'accent';
   checked = false;
   disabled = false;
+  @Input() activeToggle: boolean = false;
+  constructor(private theme: ThemeService) { }
 
   toggleTheme() {
+    this.theme.toggleTheme();
+  }
+
+  darkTheme() {
     const root = document.documentElement;
     if (root.classList.contains('light-theme')) {
       root.classList.remove('light-theme');
-      root.classList.add('dark-theme');
-    } else if (root.classList.contains('dark-theme')){
-      root.classList.remove('dark-theme');
-      root.classList.add('light-theme');
-    } else {
-      root.classList.add('dark-theme');
     }
+
+    root.classList.add('dark-theme');
+
   }
 }

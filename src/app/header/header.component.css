@@ -1,7 +1,12 @@
 /* BOTONES DE MENU */
-.menu {
-  background-color: var(--background-color);
 
+header {
+  position: absolute;
+  flex: 1;
+  z-index: 1; /* Sitúa el fondo detrás del contenido */
+  width: 100%;
+}
+.menu {
     display: flex;
     justify-content: flex-end;
     padding-top: 1%;

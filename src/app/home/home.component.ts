@@ -8,11 +8,12 @@ import { faGithub, faLinkedin, faMedium} from '@fortawesome/free-brands-svg-icon
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import { ChildCardInfoComponent } from '../child-card-info/child-card-info.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, RouterLink,HeaderComponent, CommonModule, FooterComponent, MatButtonModule, MatIconModule, FontAwesomeModule, RouterModule],
+  imports: [RouterOutlet, RouterLink, ChildCardInfoComponent,HeaderComponent, CommonModule, FooterComponent, MatButtonModule, MatIconModule, FontAwesomeModule, RouterModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

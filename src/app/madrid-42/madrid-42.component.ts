@@ -7,16 +7,15 @@ import { SlideChildCardComponent } from '../slide-child-card/slide-child-card.co
 import { ThemeService } from '../theme.service';
 
 @Component({
-    selector: 'app-frontend',
-    standalone: true,
-    templateUrl: './frontend.component.html',
-    styleUrl: './frontend.component.css',
-    imports: [SlideChildCardComponent,ChildCardInfoComponent, HeaderComponent, FooterComponent, CarouselComponent]
+  selector: 'app-madrid-42',
+  standalone: true,
+  imports: [SlideChildCardComponent,ChildCardInfoComponent, HeaderComponent, FooterComponent, CarouselComponent],
+  templateUrl: './madrid-42.component.html',
+  styleUrl: './madrid-42.component.css'
 })
-export class FrontendComponent implements OnInit{
-    constructor(private themeService: ThemeService) { }
-    ngOnInit(): void {
-        this.themeService.setTheme('light');
-    }
-
+export class Madrid42Component {
+  constructor(private themeService: ThemeService) { }
+  ngOnInit(): void {
+      this.themeService.setTheme('dark');
+  }
 }

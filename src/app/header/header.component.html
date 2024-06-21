@@ -1,20 +1,22 @@
 <header>
 
     <nav class="menu">
+      @if (activeToggle) {
         <div class="mst">
-            <mat-slide-toggle class="flex"
-            [color]="color"
-            [checked]="checked"
-            [disabled]="disabled"
-            (change)="toggleTheme()">
-            
-        </mat-slide-toggle>
-        </div>
+          <mat-slide-toggle class="flex"
+          [color]="color"
+          [checked]="checked"
+          [disabled]="disabled"
+          (change)="toggleTheme()">
+      </mat-slide-toggle>
+      </div>
+
+      }
       <ul>
         <li><a routerLink="/child">Back-End</a></li>
         <li><a routerLink="/front-end">Front-End</a></li>
-        <li><a href="#">42Madrid</a></li>
-        <li><a href="/home">Home</a></li>
+        <li><a routerLink="/42-madrid">42Madrid</a></li>
+        <li><a routerLink="/home">Home</a></li>
       </ul>
   
     </nav>
