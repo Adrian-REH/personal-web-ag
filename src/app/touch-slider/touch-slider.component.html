@@ -3,16 +3,16 @@
 </div>
  -->
 <div class="slider-container">
-    <div *ngFor="let image of images; let i = index" 
+    <div *ngFor="let item of items; let i = index" 
         class="slider-item"
          [ngClass]="{
-         'selected': i === selectedIndex,
-         'prev': i === selectedIndex - 1,
-         'next': i === selectedIndex + 1,
-         'hideLeft': i < selectedIndex - 1,
-         'hideRight': i > selectedIndex + 1,
+         'selected': i === getIndex(),
+         'prev': i === getIndex() - 1,
+         'next': i === getIndex() + 1,
+         'hideLeft': i < getIndex() - 1,
+         'hideRight': i > getIndex() + 1,
          }">
-         <app-child-card-info class="slider-image" (click)="onImageClick(i)"></app-child-card-info>
+         <app-child-card-info [item]="item" class="slider-image" (click)="onImageClick(i)"></app-child-card-info>
 
     </div>
 </div>

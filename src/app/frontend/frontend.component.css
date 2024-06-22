@@ -26,11 +26,8 @@
 
 @media screen and (max-width: 1024px) {
   .front-container {
-    align-items: center;
-    height: max-content;
     top: 0;
-    margin-top: 10%;
-    
+    margin-top: 5%;
   }
   
 }

@@ -1,11 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, Renderer2 } from '@angular/core';
 import { ChildCardInfoComponent } from '../child-card-info/child-card-info.component';
+import { Slide } from '../interfaces/slide.interface';
+import { SliderService } from '../services/slider.service';
 
-export interface Slide {
-  imgSrc: string;
-  imgAlt: string;
-}
 
 
 @Component({
@@ -17,50 +15,16 @@ export interface Slide {
 })
 export class TouchSliderComponent {
 
-  constructor(private renderer: Renderer2) {}
-  @Input() images: Slide[] = [
-    {
-      imgSrc: 'assets/04.jpg',
-      imgAlt: 'a'
-    },
-    
-    {
-      imgSrc: 'assets/05.jpg',
-      imgAlt: 'b'
-    },
-    
-    {
-      imgSrc: 'assets/05.jpg',
-      imgAlt: 'b'
-    },
-    
-    {
-      imgSrc: 'assets/05.jpg',
-      imgAlt: 'b'
-    },
-    
-    {
-      imgSrc: 'assets/05.jpg',
-      imgAlt: 'b'
-    }
-  ];
+  constructor(private sliderService: SliderService) {}
+  @Input() items: Slide[] = [];
 
-  selectedIndex = 0;
 
-  showPrev(i: number) {
-    console.log("hola");
-
-    if (this.selectedIndex > 0)
-      {
-        this.selectedIndex = i - 1;
-
-      }
-  }
   
   onImageClick(i: number) {
-    this.selectedIndex = i;
-
-
+    this.sliderService.setIndex(i);
   }
 
+  getIndex() {
+    return this.sliderService.getIndex();
+   }
 }

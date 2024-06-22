@@ -1,0 +1,96 @@
+{
+    "42Madrid": [
+    {
+        "title":"FDF",
+        "description":"Este proyecto consiste en representar un paisaje como un objeto tridimensional en los que todas las superficies están delineadas",
+        "hashtags": ["C", "Gráficos", "Algoritmos", "Estructuras de datos"],
+        "backgroundImage": [
+            {
+                "src":"https://raw.githubusercontent.com/aitorlopez42/42Barcelona-FdF/main/img/map2.png",
+                 "alt":""
+            },
+            {
+                "src":"https://user-images.githubusercontent.com/21006147/190404961-988cedf9-bed6-417f-bed3-eb5dc2b7afda.png",
+                "alt":""
+            },
+            {
+                "src":"https://i.pinimg.com/474x/f1/bb/2f/f1bb2ffe7124f7b12562d2348a83e641.jpg",
+                "alt":"s"
+            },
+            {
+                "src":"https://bostecitos.com/cdn/shop/files/image_9ddb2aa3-f7a8-4078-8a60-d0ab9255bfa7_1024x1024.jpg?v=1684888214",
+                "alt":"a"
+            },
+            {
+                "src": "https://media.revistagq.com/photos/5d1348c16994dc0dc677750c/16:9/w_1920,c_limit/doraemon.jpg",
+                "alt": "04"
+            },
+            {
+                "src": "//image.spreadshirtmedia.net/image-server/v1/compositions/T31A1PA29PT10X1Y0D182272904W5820H6984/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/panda-con-pingueino-amor-dulces-animales-lindos-taza.jpg",
+                "alt": "05"
+            }
+            ]
+        
+    },
+    {
+        "title": "Push Swap",
+        "description": "Este proyecto te hará ordenar datos en un stack, con un conjunto limitado de instrucciones, y utilizando el menor número posible de acciones. Para tener éxito, deberás probar a utilizar varios tipos de algoritmos y elegir la solución más apropiada (de entre muchas posibles) para conseguir la ordenación optimizada de los datos.",
+        "hashtags": ["C", "Algoritmos", "Estructuras de datos"]
+    },
+    {
+        "title": "Philosophers",
+        "description": "Este proyecto te hará resolver un problema clásico de sincronización: el problema de los filósofos. Deberás programar un algoritmo que permita a los filósofos sentarse en una mesa para comer, mientras evitan los problemas de sincronización.",
+        "hashtags": ["C", "Threads", "Mutex"]
+    },
+    {
+        "title": "Cub3D",
+        "description": "Este proyecto te hará descubrir el ray-casting. La técnica gráfica utilizada en los primeros videojuegos en primera persona.",
+        "hashtags": ["C", "Gráficos", "Algoritmos", "Estructuras de datos"]
+    },
+    {
+        "title": "Libft",
+        "description": "Este proyecto te hará recodificar funciones de la librería estándar de C, así como otras funciones útiles para tus proyectos.",
+        "hashtags": ["C", "Librería estándar"]
+    },
+    {
+        "title": "Get Next Line",
+        "description": "Este proyecto te hará recodificar una función que te permitirá leer una línea terminada por un salto de línea desde un descriptor de archivo.",
+        "hashtags": ["C", "Librería estándar"]
+    },
+    {
+        "title": "Printf",
+        "description": "Este proyecto te hará recodificar la función printf de la librería estándar de C.",
+        "hashtags": ["C", "Librería estándar"]
+    },
+    {
+        "title": "Cub3D",
+        "description": "Este proyecto te hará descubrir el ray-casting. La técnica gráfica utilizada en los primeros videojuegos en primera persona.",
+        "hashtags": ["C", "Gráficos", "Algoritmos", "Estructuras de datos"]
+    }
+],
+    "frontend": [
+        {
+            "title": "Appointment",
+            "description": "Esta app se especializa únicamente en Odontología. Queremos facilitar la organización de turnos para los profesionales, así también aplicaremos distintas funcionalidades como:\n- Visualizar, gestionar y diferenciar por calificación las distintas tarifas o aplicación de descuentos a sus clientes.\n- Generar, limitar y combinar distintos tickets temporales para regalar a sus clientes por bondad del profesional.\n- Organizar los distintos clientes y beneficiarlos con me gusta, una ESTRELLA.",
+            "hashtags": [
+                "odontologia",
+                "turnos",
+                "tarifas",
+                "descuentos",
+                "tickets",
+                "clientes",
+                "likes",
+                "estrella"
+            ]
+        },
+        {
+            "title": "Máquina de Estado: TCP",
+            "description": "El sistema ha representar es del Protocolo de Control de Transmisión el cual se encarga de informar del destino de los datos permitiendo la creación de conexiones en 3 etapas."
+        },
+        {
+            "title":"Microservicios",
+            "description":"El proyecto consiste en un sistema de microservicios diseñado para gestionar diferentes aspectos de un negocio mediante una arquitectura distribuida y orientada a microservicios. Estos microservicios se comunican entre sí mediante protocolo HTTP para resolver diversas solicitudes de negocio, siguiendo el principio de responsabilidad única."
+        }
+    ],
+    "backend": ""
+}

@@ -1,14 +1,14 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeService {
-
-  constructor() { }
+  constructor(@Inject(DOCUMENT) private document: Document) {}
 
   setTheme(theme: string) {
-    const root = document.documentElement;
+    const root = this.document.documentElement;
     if (theme === 'light') {
       root.classList.remove('dark-theme');
       root.classList.add('light-theme');

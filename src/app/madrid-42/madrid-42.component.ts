@@ -4,7 +4,10 @@ import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 import { CarouselComponent } from '../carousel/carousel.component';
 import { ThemeService } from '../theme.service';
-import { Slide, TouchSliderComponent } from "../touch-slider/touch-slider.component";
+import { TouchSliderComponent } from "../touch-slider/touch-slider.component";
+import { Slide } from '../interfaces/slide.interface';
+import { SliderService } from '../services/slider.service';
+import { DataProyectService } from '../services/data-proyect.service';
 
 @Component({
     selector: 'app-madrid-42',
@@ -14,18 +17,13 @@ import { Slide, TouchSliderComponent } from "../touch-slider/touch-slider.compon
     imports: [ ChildCardInfoComponent, HeaderComponent, FooterComponent, CarouselComponent, TouchSliderComponent]
 })
 export class Madrid42Component {
-  images: Slide[] = [
-    {
-        imgSrc:'assets/04.jpg',
-        imgAlt:'a'
-    },
-    {
-        imgSrc:'assets/05.jpg',
-        imgAlt:'av'
-    },
-]
-  constructor(private themeService: ThemeService) { }
+  items: Slide[] = [];
+  constructor(private themeService: ThemeService, private slide: SliderService, private dataProyectService: DataProyectService) { }
   ngOnInit(): void {
-      this.themeService.setTheme('dark');
+    this.dataProyectService.getData().subscribe(data => {
+      this.items = data['42Madrid'];
+    });
+    this.slide.slides = this.items;
+    this.themeService.setTheme('dark');
   }
 }

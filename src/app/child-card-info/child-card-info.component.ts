@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Slide } from '../interfaces/slide.interface';
 
 @Component({
   selector: 'app-child-card-info',
@@ -9,5 +10,5 @@ import { Component } from '@angular/core';
 })
 export class ChildCardInfoComponent {
 
-
+  @Input() item: Slide = {title: '', description: ''};
 }
