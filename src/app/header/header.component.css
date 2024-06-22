@@ -1,7 +1,7 @@
 /* BOTONES DE MENU */
 
 header {
-  position: absolute;
+  position: fixed;
   flex: 1;
   z-index: 1; /* Sitúa el fondo detrás del contenido */
   width: 100%;

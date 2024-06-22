@@ -5,9 +5,14 @@ import { FrontendComponent } from './frontend/frontend.component';
 import { SlideChildCardComponent } from './slide-child-card/slide-child-card.component';
 import { Madrid42Component } from './madrid-42/madrid-42.component';
 import { BackendComponent } from './backend/backend.component';
+import { TouchSliderComponent } from './touch-slider/touch-slider.component';
 
 export const routes: Routes = [
-
+    { 
+        path: 'slide',
+        title: 'slide',
+        component:  TouchSliderComponent,
+    },
     { 
         path: 'home',
         title: 'home',
@@ -19,7 +24,7 @@ export const routes: Routes = [
         component:  FrontendComponent,
     },
     { 
-        path: '42-madrid',
+        path: '42madrid',
         title: '42 Madrid',
         component:  Madrid42Component,
     },

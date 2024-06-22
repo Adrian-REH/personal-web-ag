@@ -5,18 +5,29 @@ import { FooterComponent } from "../footer/footer.component";
 import { CarouselComponent } from '../carousel/carousel.component';
 import { SlideChildCardComponent } from '../slide-child-card/slide-child-card.component';
 import { ThemeService } from '../theme.service';
+import { Slide, TouchSliderComponent } from '../touch-slider/touch-slider.component';
 
 @Component({
     selector: 'app-frontend',
     standalone: true,
     templateUrl: './frontend.component.html',
     styleUrl: './frontend.component.css',
-    imports: [SlideChildCardComponent,ChildCardInfoComponent, HeaderComponent, FooterComponent, CarouselComponent]
+    imports: [SlideChildCardComponent, TouchSliderComponent,ChildCardInfoComponent, HeaderComponent, FooterComponent, CarouselComponent]
 })
 export class FrontendComponent implements OnInit{
     constructor(private themeService: ThemeService) { }
+    images: Slide[] = [
+        {
+            imgSrc:'assets/04.jpg',
+            imgAlt:'a'
+        },
+        {
+            imgSrc:'assets/05.jpg',
+            imgAlt:'av'
+        },
+    ]
     ngOnInit(): void {
-        this.themeService.setTheme('light');
+        this.themeService.setTheme('dark');
     }
 
 }

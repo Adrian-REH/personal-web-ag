@@ -18,6 +18,7 @@
 }
 :root{
   --background-color: #E4E2D2;
+  --background-image: linear-gradient(90deg, #868686 25%, #989898 50%, #868686 75%);
   --menu-background-color:#E4E2D2;
   --icon-hover-background-color: #4f4c39;
   --icon-hover-color: #ffffff;
@@ -28,6 +29,7 @@
 }
 :root.light-theme {
     --background-color: #E4E2D2;
+    --background-image: linear-gradient(60deg, #e6e3ce 25%, #cdc9ae 0%, #E4E2D2 100%);
     --menu-background-color:#E4E2D2;
     --icon-hover-background-color: #4f4c39;
     --icon-hover-color: #ffffff;
@@ -40,6 +42,8 @@
   :root.dark-theme {
     --background-color: #4f4c39;
     --menu-background-color:#4f4c39;
+    --background-image: linear-gradient(60deg, #4f4c39 25%, #716d53 0%, #4f4c39 100%);
+
     --icon-hover-background-color: #E4E2D2;
     --icon-hover-color: #000000;
     --skeleton-background:linear-gradient(90deg, #cdcbcb 25%, #f0f0f0 50%, #cdcbcb 75%);
@@ -76,6 +80,8 @@ html, body
 
 
 body {
+  width: 100vw;
+  height: 100vh;
  font-family: Roboto, "Helvetica Neue", sans-serif; 
-  background-color: var(--background-color);
+  background-image: var(--background-image);
 }

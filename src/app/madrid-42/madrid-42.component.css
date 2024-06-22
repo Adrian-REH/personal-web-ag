@@ -2,25 +2,24 @@
 
 /*BODY*/
 main {
+    max-width: 60%;
     border-radius: 80px;
-    height: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     align-self: center;
-    box-sizing: inherit;
     position: absolute;
-  }
+}
   
-  .fe-container {
+.back-container {
+  width: 70%;
+  height: 100%;
+  max-width: 400px;
+  position: fixed;
+  margin-left: 10%;
 
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
-.fe-card {
-  border-radius: 20px;
-  display: flex; /* Utilizamos flexbox */
-  justify-content: flex-start; /* Alinea el contenido a la izquierda */
-}
+
 .background {
   position: absolute;
   top: 0;
@@ -40,4 +39,17 @@ main {
 
 .logo {
   display: none; /* Ocultamos la imagen original para evitar redundancias */
+}
+
+@media screen and (max-width: 1024px) {
+
+  main {
+    max-width: 100%;
+    border-radius: 80px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    position: absolute;
+}
 }
