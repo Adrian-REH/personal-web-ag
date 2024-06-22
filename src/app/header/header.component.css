@@ -3,6 +3,7 @@
 header {
   position: fixed;
   flex: 1;
+  top: 0;
   z-index: 1; /* Sitúa el fondo detrás del contenido */
   width: 100%;
 }
