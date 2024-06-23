@@ -34,6 +34,8 @@
     "hammerjs": "^2.0.8",
     "rxjs": "~7.8.0",
     "swiper": "^11.1.4",
+    "three": "^0.165.0",
+    "three-globe": "^2.31.1",
     "tslib": "^2.3.0",
     "zone.js": "^0.14.7"
   },
@@ -46,6 +48,7 @@
     "@types/hammerjs": "^2.0.45",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "@types/three": "^0.165.0",
     "autoprefixer": "^10.4.19",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
