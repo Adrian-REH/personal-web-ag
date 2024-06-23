@@ -7,12 +7,12 @@
     height: 70vh; 
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4); 
     border-radius: 20px;
+    border: 5px ;
     backdrop-filter: blur(30px);
     background-color: rgba(203, 203, 203, 0.231); 
     text-align: center; 
     z-index: 1;
-    
-h1 {
+    h1 {
         font-size: 3em;
         color: var(--text-color); 
     }

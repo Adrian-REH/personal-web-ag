@@ -23,6 +23,7 @@ export class Madrid42Component {
     this.dataProyectService.getData().subscribe(data => {
       this.items = data['42Madrid'];
     });
+    console.log(this.items)
     this.slide.slides = this.items;
     this.themeService.setTheme('dark');
   }

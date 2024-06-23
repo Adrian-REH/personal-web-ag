@@ -1,33 +1,98 @@
 
-.front-container {
-  width: 70%;
-  height: 100%;
-  max-width: 400px;
-  position: fixed;
-  margin-left: 10%;
-
-}
-/* BOTONES DE CONTACTO */
-
-
-
-.contentFt {
-  position: relative;
-  z-index: 1;
-  height: 100%;
+.front-content {
   display: flex;
-  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--background-image);
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  .front-slide-section {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+  
+    .front-container {
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      position: fixed;
+    }
+  }
+  .front-carousel-section {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    .front-carousel {
+      z-index: 0;
+      width: 40%;
+      position: absolute;
+    }
+  }
 }
 
-.logo {
-  display: none; /* Ocultamos la imagen original para evitar redundancias */
-}
+
+
+
 
 @media screen and (max-width: 1024px) {
-  .front-container {
-    top: 0;
-    margin-top: 5%;
+  .front-content {
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    .front-slide-section {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+    
+      .front-container {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+    }
+    .front-carousel-section {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      .front-carousel {
+        width: 50%;
+      }
+    }
   }
+}
+@media screen and (max-width: 780px) {
+  .front-content {
+    .front-slide-section {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+    
+      .front-container {
+        width: 70%;
+        height: 80%;
+        position: fixed;
+      }
+    }
+    .front-carousel-section {
   
+      .front-carousel {
+        width: 80%;
+      }
+    }
+  }
+
 }

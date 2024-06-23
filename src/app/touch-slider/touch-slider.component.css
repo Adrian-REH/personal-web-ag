@@ -10,7 +10,7 @@
 
 
 .slider-container {
-    height: 50vw;
+    height: 50%;
     width: 100%;
 
     .slider-item {
@@ -42,6 +42,7 @@
             .slider-image {
                 opacity: 0.8;
                 transform: translateX(-25%)  scale(0.8);
+                cursor: pointer;
             }
         }
         &.selected {
@@ -50,6 +51,7 @@
             .slider-image {
                 opacity: 1;
                 transform: translateX(0%) scale(1);
+                cursor: grab;
             }
         }
         &.next {
@@ -57,6 +59,8 @@
             .slider-image {
                 opacity: 0.8;
                 transform: translateX(25%) scale(0.8);
+                                cursor: pointer;
+
             }
         }
 

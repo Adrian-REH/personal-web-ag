@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { ChildCardInfoComponent } from '../child-card-info/child-card-info.component';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
@@ -14,14 +14,16 @@ import { DataProyectService } from '../services/data-proyect.service';
     standalone: true,
     templateUrl: './frontend.component.html',
     styleUrl: './frontend.component.css',
-    imports: [ TouchSliderComponent,ChildCardInfoComponent, HeaderComponent, FooterComponent, CarouselComponent]
+    imports: [ TouchSliderComponent,HeaderComponent,ChildCardInfoComponent, FooterComponent, CarouselComponent]
 })
 export class FrontendComponent implements OnInit{
     constructor(private themeService: ThemeService, private slide: SliderService, private dataProyectService: DataProyectService) { }
+ 
     items: Slide[] = [];
     ngOnInit(): void {
         this.dataProyectService.getData().subscribe(data => {
             this.items = data['frontend'];
+            
         });
         this.slide.slides = this.items;
         this.themeService.setTheme('dark');

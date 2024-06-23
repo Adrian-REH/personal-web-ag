@@ -1,9 +1,10 @@
 .img-carousel {
   width: auto;
+  height: auto;
   min-width: 100%;
-  height: 100vh;
-
-  display: block; /* Esto asegura que la imagen se muestre como un bloque, sin espacios extra alrededor */
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
   .carousel, .carousel-inner, .carousel-item, .carousel-item svg {

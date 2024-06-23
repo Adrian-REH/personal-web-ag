@@ -12,7 +12,7 @@
          'hideLeft': i < getIndex() - 1,
          'hideRight': i > getIndex() + 1,
          }">
-         <app-child-card-info [item]="item" class="slider-image" (click)="onImageClick(i)"></app-child-card-info>
+         <app-child-card-info [item]="item" class="slider-image" (click)="onImageClick(i)" (panleft)="showNext(i)" (panright)="showPrev(i)"></app-child-card-info>
 
     </div>
 </div>

@@ -81,7 +81,12 @@
                 "clientes",
                 "likes",
                 "estrella"
-            ]
+            ], "backgroundImage": [
+                {
+                    "src":"https://m.media-amazon.com/images/G/30/img15/MarchEye/Compchart/iPhone_15_Plus._CB578184765_.png",
+                     "alt":""
+                }
+                ]
         },
         {
             "title": "Máquina de Estado: TCP",

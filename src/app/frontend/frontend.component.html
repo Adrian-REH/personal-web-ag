@@ -1,11 +1,17 @@
 
 
+<section class ="front-content">
+    <section class = "front-slide-section">
+        <div class="front-container">
+            <app-touch-slider [items]="items"></app-touch-slider>
+        </div>
+    </section>
+<section class = "front-carousel-section">
+    <app-carousel class="front-carousel"></app-carousel>
+</section>  
+</section>
 
 
-    <div class="front-container">
-        <app-touch-slider [items]="items"></app-touch-slider>
-    </div>
-    
 
 <app-header [activeToggle]="true"></app-header>
 <app-footer></app-footer>

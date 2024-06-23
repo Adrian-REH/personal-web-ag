@@ -4,8 +4,6 @@ import { ChildCardInfoComponent } from '../child-card-info/child-card-info.compo
 import { Slide } from '../interfaces/slide.interface';
 import { SliderService } from '../services/slider.service';
 
-
-
 @Component({
   selector: 'app-touch-slider',
   standalone: true,
@@ -27,4 +25,11 @@ export class TouchSliderComponent {
   getIndex() {
     return this.sliderService.getIndex();
    }
+
+   showPrev(i:number) {
+    this.sliderService.showPrev(i);
+  }
+  showNext(i:number) {
+    this.sliderService.showNext(i);
+  }
 }

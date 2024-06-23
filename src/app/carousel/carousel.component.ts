@@ -17,7 +17,6 @@ export class CarouselComponent {
 
     this.sliderService.index$.subscribe(index => {
       this.images = this.sliderService.getBackGroundForIndex(index);
-      console.log(this.images);
 
     });
   }
