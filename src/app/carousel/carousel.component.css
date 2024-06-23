@@ -3,9 +3,20 @@
   height: auto;
   min-width: 100%;
   min-height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  object-fit: contain; /* Mantiene la proporción de la imagen */
 }
+
+.img-container{
+  width: 100%;
+  max-width: 800px; /* Ajusta este valor según tus necesidades */
+  background-color: black; /* Color de fondo negro para los bordes */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
 
   .carousel, .carousel-inner, .carousel-item, .carousel-item svg {
     height: 100%;

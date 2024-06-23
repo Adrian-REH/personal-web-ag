@@ -6,8 +6,8 @@
         "hashtags": ["C", "Gráficos", "Algoritmos", "Estructuras de datos"],
         "backgroundImage": [
             {
-                "src":"https://raw.githubusercontent.com/aitorlopez42/42Barcelona-FdF/main/img/map2.png",
-                 "alt":""
+                "src":"assets/fdf_01.jpg",
+                 "alt":"Representacion de un mundo"
             },
             {
                 "src":"https://user-images.githubusercontent.com/21006147/190404961-988cedf9-bed6-417f-bed3-eb5dc2b7afda.png",
@@ -83,7 +83,7 @@
                 "estrella"
             ], "backgroundImage": [
                 {
-                    "src":"https://m.media-amazon.com/images/G/30/img15/MarchEye/Compchart/iPhone_15_Plus._CB578184765_.png",
+                    "src":"/assets/appointment_home.png",
                      "alt":""
                 }
                 ]

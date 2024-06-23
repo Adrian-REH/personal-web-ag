@@ -23,7 +23,6 @@
     }
   }
   .front-carousel-section {
-    height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -31,7 +30,10 @@
     .front-carousel {
       z-index: 0;
       width: 40%;
+      height: 100%;
+      max-height: 50%;
       position: absolute;
+      
     }
   }
 }
@@ -67,6 +69,7 @@
       flex: 1;
       .front-carousel {
         width: 50%;
+        max-height: 30%;
       }
     }
   }
