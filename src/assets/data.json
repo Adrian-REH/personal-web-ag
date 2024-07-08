@@ -8,26 +8,6 @@
             {
                 "src":"assets/fdf_01.jpg",
                  "alt":"Representacion de un mundo"
-            },
-            {
-                "src":"https://user-images.githubusercontent.com/21006147/190404961-988cedf9-bed6-417f-bed3-eb5dc2b7afda.png",
-                "alt":""
-            },
-            {
-                "src":"https://i.pinimg.com/474x/f1/bb/2f/f1bb2ffe7124f7b12562d2348a83e641.jpg",
-                "alt":"s"
-            },
-            {
-                "src":"https://bostecitos.com/cdn/shop/files/image_9ddb2aa3-f7a8-4078-8a60-d0ab9255bfa7_1024x1024.jpg?v=1684888214",
-                "alt":"a"
-            },
-            {
-                "src": "https://media.revistagq.com/photos/5d1348c16994dc0dc677750c/16:9/w_1920,c_limit/doraemon.jpg",
-                "alt": "04"
-            },
-            {
-                "src": "//image.spreadshirtmedia.net/image-server/v1/compositions/T31A1PA29PT10X1Y0D182272904W5820H6984/views/1,width=550,height=550,appearanceId=1,backgroundColor=FFFFFF,noPt=true/panda-con-pingueino-amor-dulces-animales-lindos-taza.jpg",
-                "alt": "05"
             }
             ]
         
@@ -61,11 +41,6 @@
         "title": "Printf",
         "description": "Este proyecto te hará recodificar la función printf de la librería estándar de C.",
         "hashtags": ["C", "Librería estándar"]
-    },
-    {
-        "title": "Cub3D",
-        "description": "Este proyecto te hará descubrir el ray-casting. La técnica gráfica utilizada en los primeros videojuegos en primera persona.",
-        "hashtags": ["C", "Gráficos", "Algoritmos", "Estructuras de datos"]
     }
 ],
     "frontend": [
@@ -90,12 +65,56 @@
         },
         {
             "title": "Máquina de Estado: TCP",
-            "description": "El sistema ha representar es del Protocolo de Control de Transmisión el cual se encarga de informar del destino de los datos permitiendo la creación de conexiones en 3 etapas."
+            "description": "El sistema ha representar es del Protocolo de Control de Transmisión el cual se encarga de informar del destino de los datos permitiendo la creación de conexiones en 3 etapas.",
+            "hashtags": [
+                "TCP",
+                "Máquina de Estado",
+                "Conexiones"
+            ],
+            "backgroundImage": [
+                {
+                    "src":"/assets/tcp.png",
+                     "alt":""
+                }
+                ]
         },
         {
             "title":"Microservicios",
-            "description":"El proyecto consiste en un sistema de microservicios diseñado para gestionar diferentes aspectos de un negocio mediante una arquitectura distribuida y orientada a microservicios. Estos microservicios se comunican entre sí mediante protocolo HTTP para resolver diversas solicitudes de negocio, siguiendo el principio de responsabilidad única."
+            "description":"El proyecto consiste en un sistema de microservicios diseñado para gestionar diferentes aspectos de un negocio mediante una arquitectura distribuida y orientada a microservicios. Estos microservicios se comunican entre sí mediante protocolo HTTP para resolver diversas solicitudes de negocio, siguiendo el principio de responsabilidad única.",
+            "hashtags": [
+                "TCP",
+                "Máquina de Estado",
+                "Conexiones"
+            ],
+            "backgroundImage": [
+                {
+                    "src":"/assets/tcp.png",
+                     "alt":""
+                }
+            ]
+        },
+        {
+            "title":"Dash Client",
+            "description":"Es una app diseñada para administrar los datos de clientes y maquinas de todos los proveedores registrados.",
+            "hashtags": [ "ArchitectureBindables", "Kotlin", "XML", "Datos", "Retrofit2","OkHttp3","MaterialComponents","Glide"],
+            "backgroundImage": [
+                {
+                    "src":"/assets/dash_client_01.gif",
+                     "alt":""
+                }
+            ]
         }
     ],
-    "backend": ""
+    "backend": "",
+    "home":
+        {
+            "title": "Adrian Herrera",
+            "description": "¡El tamaño de fuente en la página importa! Si eliges una fuente que no sea demasiado pequeña ni demasiado grande, harás que la lectura sea mucho más fácil para tus usuarios. Una unidad especial que usan los tipógrafos para describir las fuentes es.",
+            "hashtags": [
+                "Angular", 
+                "TypeScript", "JavaScript", "HTML", "CSS"
+            ]
+
+        }
+    
 }

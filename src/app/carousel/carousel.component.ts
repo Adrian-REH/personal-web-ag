@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { SliderService } from '../services/slider.service';
 import { ImageData } from '../interfaces/slide.interface';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { combineLatest } from 'rxjs';
 
 @Component({
   selector: 'app-carousel',
@@ -15,10 +16,13 @@ export class CarouselComponent {
   images: ImageData[] = [];
   ngOnInit(): void {
 
-    this.sliderService.index$.subscribe(index => {
-      this.images = this.sliderService.getBackGroundForIndex(index);
-
+    combineLatest([
+      this.sliderService.index$,
+      this.sliderService.slide$
+    ]).subscribe(([index, slides]) => {
+      this.images = slides[index]?.backgroundImage || [];
     });
+
   }
   adjustImageSize(event: Event) {
     const img = event.target as HTMLImageElement;

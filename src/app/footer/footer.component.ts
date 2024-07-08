@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { SliderService } from '../services/slider.service';
 import { DataProyectService } from '../services/data-proyect.service';
+import { combineLatest } from 'rxjs';
 
 @Component({
   selector: 'app-footer',
@@ -16,9 +17,14 @@ export class FooterComponent {
   
   ngOnInit(): void {
 
-    this.sliderService.index$.subscribe(index => {
-      this.hashtags = this.sliderService.getHashtagsForIndex(index);
+    combineLatest([
+      this.sliderService.index$,
+      this.sliderService.slide$
+    ]).subscribe(([index, slides]) => {
+      this.hashtags = slides[index]?.hashtags || [];
     });
-   
+
+
+
   }
 }

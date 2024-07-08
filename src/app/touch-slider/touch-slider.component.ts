@@ -20,7 +20,7 @@ export class TouchSliderComponent {
   
   onImageClick(i: number) {
     this.sliderService.setIndex(i);
-  }
+    }
 
   getIndex() {
     return this.sliderService.getIndex();

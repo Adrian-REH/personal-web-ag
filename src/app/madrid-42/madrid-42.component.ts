@@ -22,9 +22,10 @@ export class Madrid42Component {
   ngOnInit(): void {
     this.dataProyectService.getData().subscribe(data => {
       this.items = data['42Madrid'];
+      this.slide.setSlides(this.items);
+
     });
     console.log(this.items)
-    this.slide.slides = this.items;
     this.themeService.setTheme('dark');
   }
 }

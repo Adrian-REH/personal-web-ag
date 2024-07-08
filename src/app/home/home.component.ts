@@ -9,6 +9,10 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ChildCardInfoComponent } from '../child-card-info/child-card-info.component';
+import { ThemeService } from '../theme.service';
+import { SliderService } from '../services/slider.service';
+import { DataProyectService } from '../services/data-proyect.service';
+import { Slide } from '../interfaces/slide.interface';
 
 @Component({
   selector: 'app-home',
@@ -21,13 +25,16 @@ export class HomeComponent implements OnInit{
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faMedium = faMedium;
-  infoText: string = '';
-  hashtags = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'CSS'];
-  name: string = '';
+  constructor(private themeService: ThemeService, private slide: SliderService, private dataProyectService: DataProyectService) { }
+  item: Slide = {} as Slide;
 
   ngOnInit(): void {
-    this.name = 'Adrian Herrera';
-    this.infoText = '¡El tamaño de fuente en la página importa! Si eliges una fuente que no sea demasiado pequeña ni demasiado grande, harás que la lectura sea mucho más fácil para tus usuarios. Una unidad especial que usan los tipógrafos para describir las fuentes es "pt" o "punto".';
+    this.dataProyectService.getData().subscribe(data => {
+      this.item = data['home'];
+      this.slide.setSlides([this.item]);
+
+    });
+    this.themeService.setTheme('dark');
   }
 
 }

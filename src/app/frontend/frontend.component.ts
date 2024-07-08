@@ -23,9 +23,9 @@ export class FrontendComponent implements OnInit{
     ngOnInit(): void {
         this.dataProyectService.getData().subscribe(data => {
             this.items = data['frontend'];
-            
+            this.slide.setSlides(data['frontend']);
+
         });
-        this.slide.slides = this.items;
         this.themeService.setTheme('dark');
     }
 

@@ -15,13 +15,30 @@
     <div class="presentation">
       <div class="presentation-image"></div>
       <p class="custom-space"></p>
-      <h1>{{ name }}</h1>
+
+      <ng-template  [ngIf]="item.title" [ngIfElse]="sklTitle">
+        <h1>
+          {{ item.title }}
+        </h1>
+      </ng-template>
+      <ng-template #sklTitle>
+        <h1 class="skeleton-text"></h1>
+      </ng-template>
       <p class="custom-space"></p>
-      <div class="center-text">{{ infoText }}</div>
+
+      <ng-template  [ngIf]="item.title" [ngIfElse]="sklDesc">
+        <div class="center-text">{{ item.description }}</div>
+      </ng-template>
+
+      <ng-template #sklDesc>
+        <div class=" center-text">¡El tamaño de fuente en la página importa! Si eliges una fuente que no sea demasiado pequeña ni demasiado grande, harás que la lectura sea mucho más fácil para tus usuarios. Una unidad especial que usan los tipógrafos para describir las fuentes es.
+        </div>
+      </ng-template>
+
     </div>
 
 
   </main>
   
-<app-footer [hashtags]="hashtags"></app-footer>
+<app-footer ></app-footer>
 
