@@ -19,14 +19,19 @@ export class ThemeService {
   }
   toggleTheme() {
     const root = document.documentElement;
+    const body = document.body;
+
     if (root.classList.contains('light-theme')) {
       root.classList.remove('light-theme');
       root.classList.add('dark-theme');
+
     } else if (root.classList.contains('dark-theme')){
       root.classList.remove('dark-theme');
       root.classList.add('light-theme');
     } else {
       root.classList.add('dark-theme');
     }
+    body.classList.toggle('dark');
+
   }
 }

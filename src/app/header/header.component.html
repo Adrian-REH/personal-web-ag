@@ -2,21 +2,72 @@
 
     <nav class="menu">
       @if (activeToggle) {
+        
         <div class="mst">
-          <mat-slide-toggle class="flex"
+          <label class="inline-flex items-center cursor-pointer">
+            <input type="checkbox"
+            
+            [checked]="checked"
+            (change)="toggleTheme()"
+       class="sr-only peer">
+            <div class="relative w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+          </label>
+<!--           <mat-slide-toggle class="flex"
           [color]="color"
           [checked]="checked"
           [disabled]="disabled"
           (change)="toggleTheme()">
-      </mat-slide-toggle>
+      </mat-slide-toggle> -->
       </div>
 
       }
       <ul>
-        <li><a routerLink="/child">Back-End</a></li>
-        <li><a routerLink="/frontend">Front-End</a></li>
-        <li><a routerLink="/42madrid">42Madrid</a></li>
-        <li><a routerLink="/home">Home</a></li>
+        <li>
+          <button class="w-full flex items-center px-4 py-2 rounded-md text-left border-transparent 
+                  hover:border-gray-100 hover:bg-[rgba(55,65,81,0.4)] transition-all 
+                  dark:hover:border-gray-500 dark:hover:bg-[rgba(255,255,255,0.4)] ">
+            <span class="w-full text-left bg-transparent 
+                          text-white  dark:text-black
+                          ">
+              Back-End
+            </span>
+          </button>
+        </li>
+       
+        <li>
+          <button class="w-full flex items-center px-4 py-2 rounded-md text-left border-transparent 
+                  hover:border-gray-100 hover:bg-[rgba(55,65,81,0.4)] transition-all 
+                  dark:hover:border-gray-500 dark:hover:bg-[rgba(255,255,255,0.4)] ">
+            <span class="w-full text-left bg-transparent 
+                          text-white  dark:text-black
+                          ">
+              Front-End
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="w-full flex items-center px-4 py-2 rounded-md text-left border-transparent 
+                  hover:border-gray-100 hover:bg-[rgba(55,65,81,0.4)] transition-all 
+                  dark:hover:border-gray-500 dark:hover:bg-[rgba(255,255,255,0.4)] ">
+            <span class="w-full text-left bg-transparent 
+                          text-white  dark:text-black
+                          ">
+              42 Madrid
+            </span>
+          </button>
+        </li>
+        <li>
+          <button class="w-full flex items-center px-4 py-2 rounded-md text-left border-transparent 
+                  hover:border-gray-100 hover:bg-[rgba(55,65,81,0.4)] transition-all 
+                  dark:hover:border-gray-500 dark:hover:bg-[rgba(255,255,255,0.4)] ">
+            <span class="w-full text-left bg-transparent 
+                          text-white  dark:text-black
+                          ">
+              Home
+            </span>
+          </button>
+        </li>
+       
       </ul>
   
     </nav>

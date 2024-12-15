@@ -1,4 +1,7 @@
 /* BOTONES DE MENU */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 header {
   position: fixed;
